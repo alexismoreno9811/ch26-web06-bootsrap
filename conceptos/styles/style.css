@@ -7,9 +7,17 @@
 .demo-content {
     padding: 15px;
     background: #DBDFE5;
-    margin: 2px;
 }
 
 .bg-alt {
     background: #ABB1B8;
+}
+
+.main-content{
+    min-height: 215px;
+}
+
+.sidebar-content{
+    min-height: 100px;
+    margin-bottom: 15px;
 }
