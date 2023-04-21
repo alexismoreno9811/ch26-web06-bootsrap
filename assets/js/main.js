@@ -1,7 +1,22 @@
 console.log(`Hola desde un scrpit externo`);
 
-function changeColorToRed(){
-  const refName = document.getElementById("name");
+function changeColorTo(color){
+  const refName = getReferenceFullName();
+  refName.style.color = color;
+};
 
-  refName.style.color = "#FF0000";
+function getReferenceFullName(){
+  return document.getElementById("fullname");
+};
+
+function changeColorParagraph(refObj, color){
+  refObj.style.color = color;
+};
+
+function resetColorText(){
+  const refObjs = document.getElementsByClassName("text-color");
+  for (let i = 0; i < refObjs.length; i++) {
+    const element = refObjs[i];
+    element.style.color = "#000000";
+  }
 }

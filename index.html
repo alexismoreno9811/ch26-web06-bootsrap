@@ -47,7 +47,7 @@
                 Proyectos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Dime tu nombre</a></li>
+                <li><a class="dropdown-item" href="./assets/html/nombre.html">Dime tu nombre</a></li>
                 <li><a class="dropdown-item" href="#">Calculadora</a></li>
                 <li>
                   <hr class="dropdown-divider">
@@ -138,6 +138,7 @@
       </div>
     </div>
   </div>
+  <!-- Cards -->
   <div class="container text-center">
     <h2 class="my-2">Hola</h2>
     <div class="row mt-2">
@@ -174,20 +175,33 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-5 text-center">
-        <p id="name">Mi nombre</p>
+        <h3 class="text-color" id="fullname">Mi nombre</h3>
         <!-- <p onclick="changeColorToRed()">Cambia el color a rojo</p> -->
       </div>
     </div>
     <!-- Botones cambia el color -->
     <div class="row justify-content-center">
       <div class="col-4 text-center">
-        <button onclick="changeColorToRed()" type="button" class="btn btn-danger">Rojo</button>
+        <button onclick="changeColorTo(`#FF0000`)" type="button" class="btn btn-danger">Rojo</button>
       </div>
       <div class="col-4 text-center">
-        <button type="button" class="btn btn-danger">Danger</button>
+        <button onclick="changeColorTo(`#0000FF`)" type="button" class="btn btn-primary">Azul</button>
       </div>
       <div class="col-4 text-center">
-        <button onclick="changeColorToRed()" type="button" class="btn btn-dark">Dark</button>
+        <button onclick="changeColorTo(`#00FF00`)" type="button" class="btn btn-success">Verde</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-2">
+    <div class="row justify-content-center">
+      <div class="col-4 text-center"><p class="text-color" onclick="changeColorParagraph(this, `#00FF00`)">Me cambiaré a verde</p></div>
+      <div class="col-4 text-center"><p class="text-color" onclick="changeColorParagraph(this, `#0000FF`)">Me cambiaré a azul</p></div>
+      <div class="col-4 text-center"><p class="text-color" onclick="changeColorParagraph(this, `#FFFF00`)">Me cambiaré a amarillo</p></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-5 text-center">
+        <button type="button" class="btn btn-dark" onclick="resetColorText()">RESET</button>
       </div>
     </div>
   </div>
@@ -205,7 +219,7 @@
     crossorigin="anonymous"></script>
   <!-- Scrpt cambia el nombre -->
   <script>
-    const refName = document.getElementById("name");
+    const refName = document.getElementById("fullname");
     console.log(refName);
     refName.innerHTML = "Alexis <strong>Moreno</strong>";
   </script>
