@@ -11,15 +11,7 @@
   <!-- Bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
-  <!-- CSS personalizado -->
-  <link rel="stylesheet" href="./assets/styles/main.css">
   <title>Bootstrap demo</title>
-
-  <script>
-    console.log(`Holi Crayoli`);
-    let d = new Date();
-    console.log(`Se inicio el proceso a las ${d.getHours()} h.`);
-  </script>
 
 </head>
 
@@ -27,8 +19,7 @@
 
   <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="logo-shuriken" src="./assets/img/shuriken.png"
-          alt="shuriken logo"></a>
+      <a class="navbar-brand" href="#"><img src="./assets/img/shuriken.png" alt="shuriken logo" style="height: 40px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,11 +39,11 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./assets/html/nombre.html">Dime tu nombre</a></li>
-                <li><a class="dropdown-item" href="#">Calculadora</a></li>
+                <li><a class="dropdown-item disabled" href="#">Calculadora</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item disabled" href="#">Something else here</a></li>
               </ul>
           </li>
           <li class="nav-item">
@@ -91,21 +82,16 @@
               aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
               aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
-              <img src="./assets/img/Rojo.jpg" class="d-block w-100 rounded" alt="Arte rojo">
+              <img src="./assets/img/img1.jpg" class="d-block w-100 rounded" alt="work space">
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-              <img src="./assets/img/Rojo2.jpg" class="d-block w-100 rounded" alt="">
+              <img src="./assets/img/img2.jpg" class="d-block w-100 rounded" alt="developer in work">
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-              <img src="./assets/img/Rojo3.jpg" class="d-block w-100 rounded" alt="">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="./assets/img/Rojo4.jpg" class="d-block w-100 rounded" alt="">
+              <img src="./assets/img/img3.jpg" class="d-block w-100 rounded" alt="desing working">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -125,9 +111,7 @@
         <!-- Descripción -->
         <div class="row">
           <div class="col">
-            <p>Me inicié como desarrollador con técnicas ninjas Lorem ipsum dolor sit, amet consectetur adipisicing
-              elit.Quod odit quam nam quaerat voluptas recusandae hic sit? Libero numquam facilis recusandae quibusdam a
-              consequuntur quae velit dolorum consequatur. Quod, iure!</p>
+            <p>Me inicié como desarrollador con técnicas ninjas inculcadas en Generation México donde pude aprender atravez de arduo entrenamiento fisico y mental. Con mis sensei Sergio, Tania, Nancy, Monste como los más importantes sin embargo no son los unicos. Así mismo mis compañeros fueron una fuente de inspiración para seguir creciendo y apoyandolos me ayudo también a repetir lo aprendido y mejorar aún más.</p>
           </div>
         </div>
         <!-- Botón linkedin -->
@@ -140,32 +124,35 @@
   </div>
   <!-- Cards -->
   <div class="container text-center">
-    <h2 class="my-2">Hola</h2>
+    <h2 class="my-2">Armas ninja</h2>
     <div class="row mt-2">
       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
         <div class="card text-bg-secondary border-dark">
-          <img class="card-img-top" src="./assets/img/Rojo.jpg" alt="Title">
+          <img class="card-img-top" src="./assets/img/armas1.jpg" alt="Title">
           <div class="card-body">
-            <h4 class="card-title">Titulo</h4>
-            <p class="card-text">Texto</p>
+            <h4 class="card-title">Shuriken</h4>
+            <p class="card-text">Distancias cortas y medias pero solo de lanzamiento para distraer o desangrar a los enemigos.</p>
+            <a href="https://es.wikipedia.org/wiki/Shuriken"><button type="button" class="btn btn-dark text-center">Más info sobre Shuriken</button></a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
         <div class="card text-bg-dark border-danger">
-          <img class="card-img-top" src="./assets/img/Rojo2.jpg" alt="Title">
+          <img class="card-img-top" src="./assets/img/armas2.jpg" alt="Title">
           <div class="card-body">
-            <h4 class="card-title">Titulo</h4>
-            <p class="card-text">Texto</p>
+            <h4 class="card-title">Kunai</h4>
+            <p class="card-text">Cuerpo a cuerpo o a distancia media son una gran herramienta para cazar a sus objetivos.</p>
+            <a href="https://es.wikipedia.org/wiki/Kunai"><button type="button" class="btn btn-secondary text-center">  Más info sobre kunai </button></a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-12 my-2">
         <div class="card text-bg-warning border-dark">
-          <img class="card-img-top" src="./assets/img/Rojo3.jpg" alt="Title">
+          <img class="card-img-top" src="./assets/img/armas3.jpg" alt="Title">
           <div class="card-body">
-            <h4 class="card-title">Titulo</h4>
-            <p class="card-text">Texto</p>
+            <h4 class="card-title">Shinobigatana</h4>
+            <p class="card-text">Para ataque cercano y rematar oponentes aunque un poco pesadas.</p>
+            <a href="https://es.wikipedia.org/wiki/Ninjat%C5%8D"><button type="button" class="btn btn-danger text-center">Más info sobre Shinobigatana</button></a>
           </div>
         </div>
       </div>
@@ -173,6 +160,9 @@
   </div>
   <!-- Acceso a DOM -->
   <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">Los siguientes textos pueden cambiar de color y regresarlos al color original con el boton <strong>RESET</strong></div>
+    </div>
     <div class="row justify-content-center">
       <div class="col-5 text-center">
         <h3 class="text-color" id="fullname">Mi nombre</h3>
@@ -195,9 +185,15 @@
 
   <div class="container my-2">
     <div class="row justify-content-center">
-      <div class="col-4 text-center"><p class="text-color" onclick="changeColorParagraph(this, `#00FF00`)">Me cambiaré a verde</p></div>
-      <div class="col-4 text-center"><p class="text-color" onclick="changeColorParagraph(this, `#0000FF`)">Me cambiaré a azul</p></div>
-      <div class="col-4 text-center"><p class="text-color" onclick="changeColorParagraph(this, `#FFFF00`)">Me cambiaré a amarillo</p></div>
+      <div class="col-4 text-center">
+        <p class="text-color" onclick="changeColorParagraph(this, `#00FF00`)">Me cambiaré a verde</p>
+      </div>
+      <div class="col-4 text-center">
+        <p class="text-color" onclick="changeColorParagraph(this, `#0000FF`)">Me cambiaré a azul</p>
+      </div>
+      <div class="col-4 text-center">
+        <p class="text-color" onclick="changeColorParagraph(this, `#FFFF00`)">Me cambiaré a amarillo</p>
+      </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-5 text-center">

@@ -10,17 +10,15 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <!-- Bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="../styles/main.css">
   <title>Nombre</title>
 
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="../../index.html"><img class="logo-shuriken" src="../img/shuriken.png"
-          alt="shuriken logo"></a>
+          alt="shuriken logo" style="height: 40px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,11 +38,11 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Dime tu nombre</a></li>
-                <li><a class="dropdown-item" href="#">Calculadora</a></li>
+                <li><a class="dropdown-item disabled" href="#">Calculadora</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item disabled" href="#">Something else here</a></li>
               </ul>
           </li>
           <li class="nav-item">
@@ -55,6 +53,16 @@
     </div>
   </nav>
   
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <p id="change-name">Hola nombre</p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <button onclick="changeName()" type="button" class="btn btn-dark">¿Cambiar el nombre?</button>
+    </div>
+  </div>  
   <!-- Ondas SVG -->
   <div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -67,6 +75,7 @@
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

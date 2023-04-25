@@ -1,8 +1,6 @@
-console.log(`Hola desde un scrpit externo`);
-
 function changeColorTo(color){
-  const refName = getReferenceFullName();
-  refName.style.color = color;
+  const refColor = getReferenceFullName();
+  refColor.style.color = color;
 };
 
 function getReferenceFullName(){
@@ -19,4 +17,10 @@ function resetColorText(){
     const element = refObjs[i];
     element.style.color = "#000000";
   }
+}
+
+function changeName() {
+  const name = prompt("¿Cuál es tu nombre?");
+  const refName = document.getElementById("change-name");
+  refName.innerHTML="Hola " + name;
 }
