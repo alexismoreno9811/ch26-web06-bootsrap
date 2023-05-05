@@ -1,4 +1,4 @@
-const calcularFecha = document.getElementById(`buttonCalcular`);
+const formRef = document.getElementById(`form-date`);
 
 getDay = () => {
   const day = document.getElementsByClassName(`form-control`);
@@ -6,7 +6,7 @@ getDay = () => {
   return date.getDay();
 };
 
-calcularFecha.addEventListener("click", (event) => {
+formRef.addEventListener("submit", (event) => {
   event.preventDefault();
   const day = getDay();
   const resultRef = document.getElementById(`result`);
