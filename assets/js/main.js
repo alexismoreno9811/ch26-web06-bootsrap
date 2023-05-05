@@ -110,9 +110,9 @@ function finJuego(refsJuego, numero) {
 
 function reiniciar(refsJuego) {
   refsJuego[0].innerHTML = "¿El número en el que pensaste es:";
-  refsJuego[1].removeAttribute("hidden", "");
-  refsJuego[2].removeAttribute("hidden", "");
-  refsJuego[3].removeAttribute("hidden", "");
+  refsJuego[1].removeAttribute("hidden");
+  refsJuego[2].removeAttribute("hidden");
+  refsJuego[3].removeAttribute("hidden");
   refsJuego[1].innerHTML = `50` ;
   refsJuego[2].removeAttribute("onclick");
   refsJuego[2].setAttribute("onclick", "juegoActivo(0)");
