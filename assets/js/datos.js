@@ -31,7 +31,7 @@ const printData = async () => {
         printDoom(users[i], i);
     };
   }
-  else {
+  else if(spinner.innerHTML === ``){
     const users = JSON.parse(localStorage.getItem('mis-productos'));
     for (let i = 0;i < users.length ;i++){
       printDoom(users[i], i);
